@@ -7,5 +7,5 @@
 document.getElementsByClassName("start").addEventListener("click" , startTimer);
 
 function startTimer(){
-    alert("i got clicked");
+    alert("start the timer");
 }                    
