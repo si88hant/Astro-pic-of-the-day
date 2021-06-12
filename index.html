@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet"
 </head>
-<body>
+<body onload="template()">
 
 <div class="container">
     <!-- Heading-->
@@ -17,23 +17,27 @@
         <h1>Pomodoro Timer</h1>
     </div>
 
+     
     <!--Clock-->
     <div class="clock">
         <div>
             <h3 id="minutes"></h3>
         </div>
-        <div>:</div>
+        <div id="colon">:</div>
         <div>
             <h3 id="seconds"></h3>
         </div>
     </div>
 
+    <div id="done">
+       
+    </div>
 
 
     <!--Start and stop buttons-->
-    <div class>
-        <button class = "start" >Start</button>
-        <button class = "stop" >Stop</button>
+    <div class="buttons">
+        <button class = "start" onclick="start()">Start</button>
+        <button class = "reset" onclick="reset()">Reset</button>
     </div>
 </div>
 
