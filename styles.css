@@ -5,7 +5,7 @@ body{
 .clock{
     font-family: 'Chewy', cursive;
     font-size: 2rem;
-    width: 100%;
+    width: 100%;  /* still the clock appears vertical. dont know whats happening 😫 */
 }
 
 .container{
