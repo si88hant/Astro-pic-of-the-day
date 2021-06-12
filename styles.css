@@ -4,7 +4,8 @@ body{
 
 .clock{
     font-family: 'Chewy', cursive;
-    font-size: 4rem;
+    font-size: 2rem;
+    width: 100%;
 }
 
 .container{
@@ -34,11 +35,11 @@ body{
 .start:hover {background-color: #f1bc2a }
 
 .start:active {
-  background-color: ##f2e9d0;
+  background-color: #f2e9d0;
   transform: translateY(4px) translateX(3px);
 }
 
-.stop{
+.reset{
     position: absolute; 
     width:130px;
     height:40px; 
@@ -52,9 +53,9 @@ body{
     border: 2px solid;
     box-shadow: 5px 5px 8px #0000009a;
 }
-.stop:hover {background-color: #c8c3d1 }
+.reset:hover {background-color: #c8c3d1 }
 
-.stop:active {
+.reset:active {
   background-color: #f4eeff;
   transform: translateY(4px) translateX(3px);
 }
@@ -63,6 +64,17 @@ body{
     position: absolute;
     top: 120px;
     left: 550px;        
+    font-size: 9rem;
+    font-family: 'Chewy', cursive;
+}
+
+#minutes, #colon, #seconds {
+    display:inline;
+    
+}
+
+.show_message{
+    display: block;
     font-size: 9rem;
     font-family: 'Chewy', cursive;
 }
