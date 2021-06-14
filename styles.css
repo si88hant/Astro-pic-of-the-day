@@ -4,8 +4,9 @@ body{
 
 .clock{
     font-family: 'Chewy', cursive;
-    font-size: 2rem;
+    font-size: 4rem;
     width: 100%;  /* still the clock appears vertical. dont know whats happening 😫 */
+    margin: 0;
 }
 
 .container{
@@ -68,9 +69,18 @@ body{
     font-family: 'Chewy', cursive;
 }
 
-#minutes, #colon, #seconds {
-    display:inline;
-    
+#minutes {
+    width: 50%;
+    margin: 0;
+    float: left;
+    text-align: center;
+}
+
+#seconds {
+    width: 50%;
+    margin: 0;
+    float: right;
+    text-align: center;
 }
 
 .show_message{
