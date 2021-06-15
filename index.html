@@ -7,7 +7,7 @@
     <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
 </head>
 <body onload="template()">
 
@@ -24,9 +24,9 @@
             <h3 id="minutes"></h3>
         </div>
         <h3 style="
-         margin-left: 0px;
-        margin-right: 17000px;
-        margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 17000px;
+            margin-bottom: 0px;
         ">:</h3> 
         <div>
             <h3 id="seconds"></h3>
@@ -40,11 +40,12 @@
 
     <!--Start and stop buttons-->
     <div class="buttons">
-        <button class = "start" onclick="start()">Start</button>
-        <button class = "reset" onclick="reset()">Reset</button>
+        <button class = "startbt" id="st" onclick="start()">Start</button>  <!--for some reason addEventListener("click", ()=>{....}); doesn't seem to work BUT onclick() is working 🤷‍♂️-->
+        <button class = "resetbt" id="rst" onclick="reset()">Reset</button>
     </div>
 </div>
 
     <script src="app.js"></script>
 </body>
 </html>
+

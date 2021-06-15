@@ -1,10 +1,13 @@
+
 let minutes = 25;
 let seconds = "00";
+
 
  function template(){
      document.getElementById("minutes").innerHTML = minutes;
      document.getElementById("seconds").innerHTML = seconds;
  }
+
 
  function start(){
       
@@ -47,10 +50,11 @@ let seconds = "00";
      }
  }
 
+ document.getElementsByClassName("resetbt").addEventListener('click',reset);
  function reset(){
 
     minutes = 24;
-    seconds = "00";
+    seconds = "59";
 
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
@@ -58,3 +62,12 @@ let seconds = "00";
 
  }
 
+//now disabling the start and reset button once you click on start so that you can't run it twice,thrice...
+const disable_start_button = document.getElementById("st");
+
+disable_start_button.disabled = true;
+
+
+const disable_reset_button = document.getElementById("rst");
+
+disable_reset_button.disabled = true;
